@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS album (
     id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     artist_id INT NOT NULL,
     name VARCHAR(200) NOT NULL,
-    release_year DATE,
+    release_year INT,
     CONSTRAINT fk_album_artist FOREIGN KEY (artist_id) REFERENCES artist (id),
     UNIQUE INDEX album_id_uindex (id),
     INDEX album_artist_id_index (artist_id),

@@ -29,11 +29,21 @@ insert into artist (id, name) values (5,'Mecano')
 insert into artist (id, name) values (6,'AWOLNATION')
 insert into artist (id, name) values (7,'Coldplay')
 
+insert into album (id, artist_id, name, release_year)
+
 #Song
-insert into song (id, album_id, title, track_number, duration, style_id) values (,,'',,,);
-insert into song (id, album_id, title, track_number, duration, style_id) values (,,'',,,);
-insert into song (id, album_id, title, track_number, duration, style_id) values (,,'',,,);
-insert into song (id, album_id, title, track_number, duration, style_id) values (,,'',,,);
-insert into song (id, album_id, title, track_number, duration, style_id) values (,,'',,,);
-insert into song (id, album_id, title, track_number, duration, style_id) values (,,'',,,);
-insert into song (id, album_id, title, track_number, duration, style_id) values (,,'',,,);
+insert into song (id, album_id, title, track_number, duration, style_id) values (1,,'',,,);
+insert into song (id, album_id, title, track_number, duration, style_id) values (2,,'',,,);
+insert into song (id, album_id, title, track_number, duration, style_id) values (3,,'',,,);
+insert into song (id, album_id, title, track_number, duration, style_id) values (4,,'',,,);
+insert into song (id, album_id, title, track_number, duration, style_id) values (5,,'',,,);
+insert into song (id, album_id, title, track_number, duration, style_id) values (6,,'',,,);
+insert into song (id, album_id, title, track_number, duration, style_id) values (7,,'',,,);
+insert into song (id, album_id, title, track_number, duration, style_id) values (8,,'',,,);
+insert into song (id, album_id, title, track_number, duration, style_id) values (9,,'',,,);
+insert into song (id, album_id, title, track_number, duration, style_id) values (10,,'',,,);
+insert into song (id, album_id, title, track_number, duration, style_id) values (11,,'',,,);
+insert into song (id, album_id, title, track_number, duration, style_id) values (12,,'',,,);
+insert into song (id, album_id, title, track_number, duration, style_id) values (13,,'',,,);
+insert into song (id, album_id, title, track_number, duration, style_id) values (14,,'',,,);
+insert into song (id, album_id, title, track_number, duration, style_id) values (15,,'',,,);
