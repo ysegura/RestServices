@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.autentia.tutoriales</groupId>
     <artifactId>restservice</artifactId>
-    <packaging>pom</packaging>
+    <packaging>war</packaging>
     <version>1.1-SNAPSHOT</version>
 
     <scm>
@@ -309,10 +309,11 @@
                     <execution>
                         <id>default</id>
                         <goals>
+                            <goal>clean</goal>
+                            <goal>prepare</goal>
                             <goal>perform</goal>
                         </goals>
                         <configuration>
-                            <goals>perform</goals>
                             <autoversionsubmodules>true</autoversionsubmodules>
                         </configuration>
                     </execution>
