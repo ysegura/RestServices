@@ -9,7 +9,6 @@
         <url>https://github.com/ysegura/RestServices</url>
         <connection>scm:git:git@github.com/ysegura/RestServices.git</connection>
         <developerConnection>scm:git:git@github.com:ysegura/RestServices.git</developerConnection>
-      <tag>restservice-1.0</tag>
   </scm>
 
     <properties>
