@@ -176,7 +176,7 @@
                 <skip.integration.tests>true</skip.integration.tests>
                 <skip.unit.tests>false</skip.unit.tests>
                 <dbUrlFlyway>jdbc:mysql://localhost:3306/restservice</dbUrlFlyway>
-                <sql.file.path>/src/main/resources/db/migration/dev</sql.file.path>
+                <sql.file.path>src/main/resources/db/migration/dev</sql.file.path>
             </properties>
             <build>
                 <plugins>
