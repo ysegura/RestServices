@@ -325,12 +325,12 @@
         <site>
             <id>autentia-site</id>
             <name>Autentia Site</name>
-            <url>${autentia.site.distribution}/restservice/${project.version}</url>
+            <url>${local.site.distribution}/restservice/${project.version}</url>
         </site>
         <repository>
             <id>autentia-repository</id>
             <name>Autentia Repository</name>
-            <url>${autentia.mvn.distribution}</url>
+            <url>${local.mvn.distribution}</url>
         </repository>
 
     </distributionManagement>
