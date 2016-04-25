@@ -6,6 +6,12 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
+    <scm>
+        <url>https://github.com/ysegura/RestServices</url>
+        <connection>scm:git:git@github.com/ysegura/RestServices.git</connection>
+        <developerConnection>scm:git:git@github.com:ysegura/RestServices.git</developerConnection>
+    </scm>
+
     <properties>
         <build.profile.id>dev</build.profile.id>
         <skip.unit.tests>false</skip.unit.tests>
@@ -302,48 +308,31 @@
                 <executions>
                     <execution>
                         <id>default</id>
+                        <goals>
+                            <goal>perform</goal>
+                        </goals>
                         <configuration>
                             <goals>perform</goals>
                             <autoversionsubmodules>true</autoversionsubmodules>
                         </configuration>
                     </execution>
                 </executions>
+                
             </plugin>
         </plugins>
-        <pluginManagement>
-            <plugins>
-                <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
-                <plugin>
-                    <groupId>org.eclipse.m2e</groupId>
-                    <artifactId>lifecycle-mapping</artifactId>
-                    <version>1.0.0</version>
-                    <configuration>
-                        <lifecycleMappingMetadata>
-                            <pluginExecutions>
-                                <pluginExecution>
-                                    <pluginExecutionFilter>
-                                        <groupId>
-                                            org.codehaus.mojo
-                                        </groupId>
-                                        <artifactId>
-                                            build-helper-maven-plugin
-                                        </artifactId>
-                                        <versionRange>
-                                            [1.7,)
-                                        </versionRange>
-                                        <goals>
-                                            <goal>add-test-source</goal>
-                                        </goals>
-                                    </pluginExecutionFilter>
-                                    <action>
-                                        <ignore/>
-                                    </action>
-                                </pluginExecution>
-                            </pluginExecutions>
-                        </lifecycleMappingMetadata>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </pluginManagement>
     </build>
+
+    <distributionManagement>
+        <site>
+            <id>autentia-site</id>
+            <name>Autentia Site</name>
+            <url>${autentia.site.distribution}/restservice/${project.version}</url>
+        </site>
+        <repository>
+            <id>autentia-repository</id>
+            <name>Autentia Repository</name>
+            <url>${autentia.mvn.distribution}</url>
+        </repository>
+
+    </distributionManagement>
 </project>
