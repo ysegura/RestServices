@@ -6,20 +6,18 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class ArtistTest extends BaseTest<Artist> {
+public class StyleTest extends BaseTest<Style>{
 
-    private String name = "Artist Name";
+    private String name = "Folk";
 
     @Before
     public void setUp(){
-        this.sut = new Artist();
+        sut = new Style();
     }
 
     @Test
-    public void shouldSetArtistName(){
+    public void shouldSetName(){
         sut.setName(name);
-        assertEquals(name,sut.getName());
+        assertEquals(name, sut.getName());
     }
-
-
 }
