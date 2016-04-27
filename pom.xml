@@ -3,13 +3,13 @@
     <groupId>com.autentia.tutoriales</groupId>
     <artifactId>restservice</artifactId>
     <packaging>war</packaging>
-    <version>1.5</version>
+    <version>1.6-SNAPSHOT</version>
 
     <scm>
         <url>https://github.com/ysegura/RestServices</url>
         <connection>scm:git:git@github.com/ysegura/RestServices.git</connection>
         <developerConnection>scm:git:git@github.com:ysegura/RestServices.git</developerConnection>
-        <tag>restservice-1.5</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <properties>
